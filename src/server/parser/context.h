@@ -3,7 +3,8 @@
 class Context {
     public:
         ~Context();
-        Context(char* cmd,char* arg0,char* arg1, char* arg2);
+        Context(char* cmd,vector<char*> arg0,vector<char*> arg1, vector<char*> arg2);
+        Context(char* cmd);
     
     private:
         char *cmd;
@@ -21,4 +22,5 @@ class Context {
         vector<char*> get_arg1();
 
         vector<char*> get_arg2();
+
 }

@@ -3,6 +3,8 @@
 
 #include "../parser/context.h"
 
+using namespace std;
+
 bool Context::validate(){
     // nop
     return true;
@@ -13,6 +15,10 @@ Context::Context(char* cmd,vector<char*> arg0,vector<char*>  arg1, vector<char*>
     this->args0=arg0;
     this->args1=arg1;
     this->args2=arg2;
+}
+
+Context::Context(char* cmd){
+    this->cmd=cmd;
 }
 
 Context::~Context(){
@@ -30,14 +36,15 @@ char* Context::get_command() {
     return this->cmd;
 }
 
-std::vector<char*> Context::get_arg0() {
+vector<char*> Context::get_arg0() {
     return this->args0;
 }
 
-std::vector<char*> Context::get_arg1() {
+vector<char*> Context::get_arg1() {
     return this->args1;
 }
 
-std::vector<char*> Context::get_arg2() {
+vector<char*> Context::get_arg2() {
     return this->args2;
 }
+

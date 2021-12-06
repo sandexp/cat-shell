@@ -16,12 +16,7 @@ class Executor{
         /**
         * @brief 同步执行Shell指令逻辑
         */
-        void executor_sync();
-
-        /**
-         * @brief 异步执行shell指令逻辑(默认回调)
-         */
-        void execute_async();
+        void execute();
         
         /**
         * @brief kill当前任务
