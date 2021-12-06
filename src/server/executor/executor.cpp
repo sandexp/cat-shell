@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <memory>
 
 #include "../executor/executor.h"
 #include "../parser/context.h"
@@ -7,18 +9,20 @@ using namespace std;
 
 
 Executor::Executor(Context* context){
-    
+    this->context=context;
 }
 
 Executor::~Executor(){
-
+    this->context= nullptr;
+    free(this->context);
 }
 
 /**
  * @brief 执行执行器中的shell指令 同步执行
  */
 void Executor::executor_sync(){
-
+    pid_t pid;
+    pid=fork();
 }
 
 /**

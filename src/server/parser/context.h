@@ -1,10 +1,9 @@
 #include <vector>
 
-
 class Context {
     public:
         ~Context();
-        Context(char *input);
+        Context(char* cmd,char* arg0,char* arg1, char* arg2);
     
     private:
         char *cmd;
