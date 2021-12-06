@@ -25,3 +25,19 @@ Context::~Context(){
     free(this->args1);
     free(this->args2);
 }
+
+char* Context::get_command() {
+    return this->cmd;
+}
+
+std::vector<char*> Context::get_arg0() {
+    return this->args0;
+}
+
+std::vector<char*> Context::get_arg1() {
+    return this->args1;
+}
+
+std::vector<char*> Context::get_arg2() {
+    return this->args2;
+}

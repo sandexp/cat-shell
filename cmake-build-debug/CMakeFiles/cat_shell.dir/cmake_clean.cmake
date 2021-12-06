@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cat_shell.dir/main.cpp.obj"
-  "cat_shell.exe"
-  "cat_shell.exe.manifest"
+  "CMakeFiles/cat_shell.dir/main.cpp.o"
+  "cat_shell"
   "cat_shell.pdb"
-  "libcat_shell.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

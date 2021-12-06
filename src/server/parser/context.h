@@ -13,4 +13,12 @@ class Context {
     
     public:
         bool validate();
+
+        char* get_command();
+
+        vector<char*> get_arg0();
+
+        vector<char*> get_arg1();
+
+        vector<char*> get_arg2();
 }
