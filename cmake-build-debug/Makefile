@@ -48,13 +48,59 @@ RM = /usr/local/src/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.0dXvTRv2td
+CMAKE_SOURCE_DIR = /tmp/tmp.yulEUlC8kV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.0dXvTRv2td/cmake-build-debug
+CMAKE_BINARY_DIR = /tmp/tmp.yulEUlC8kV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/src/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/src/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/src/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/src/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/src/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/src/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -80,9 +126,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.0dXvTRv2td/cmake-build-debug/CMakeFiles /tmp/tmp.0dXvTRv2td/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.yulEUlC8kV/cmake-build-debug/CMakeFiles /tmp/tmp.yulEUlC8kV/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.0dXvTRv2td/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.yulEUlC8kV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +157,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cat_shell
+# Target rules for targets named server_static
 
 # Build rule for target.
-cat_shell: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cat_shell
-.PHONY : cat_shell
+server_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server_static
+.PHONY : server_static
 
 # fast build rule for target.
-cat_shell/fast:
-	$(MAKE) -f CMakeFiles/cat_shell.dir/build.make CMakeFiles/cat_shell.dir/build
-.PHONY : cat_shell/fast
+server_static/fast:
+	$(MAKE) -f src/server/CMakeFiles/server_static.dir/build.make src/server/CMakeFiles/server_static.dir/build
+.PHONY : server_static/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named server
 
-.PHONY : main.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/cat_shell.dir/build.make CMakeFiles/cat_shell.dir/main.cpp.o
-.PHONY : main.cpp.o
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/build
+.PHONY : server/fast
 
-main.i: main.cpp.i
+#=============================================================================
+# Target rules for targets named server_test
 
-.PHONY : main.i
+# Build rule for target.
+server_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server_test
+.PHONY : server_test
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/cat_shell.dir/build.make CMakeFiles/cat_shell.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/cat_shell.dir/build.make CMakeFiles/cat_shell.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+server_test/fast:
+	$(MAKE) -f test/CMakeFiles/server_test.dir/build.make test/CMakeFiles/server_test.dir/build
+.PHONY : server_test/fast
 
 # Help Target
 help:
@@ -156,12 +201,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cat_shell"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... server_static"
+	@echo "... server"
+	@echo "... server_test"
 .PHONY : help
 
 

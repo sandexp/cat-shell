@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.0dXvTRv2td
+# Install script for directory: /tmp/tmp.yulEUlC8kV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,6 +37,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/cmake_install.cmake")
+  include("/tmp/tmp.yulEUlC8kV/cmake-build-debug/test/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -45,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.0dXvTRv2td/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/tmp/tmp.yulEUlC8kV/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

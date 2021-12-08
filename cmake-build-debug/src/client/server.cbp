@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\client\;CMake Files\src\server\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/client/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server_static">
+				<Option output="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/lib/libserver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 server_static"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server_static/fast">
+				<Option output="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/lib/libserver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 server_static/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server">
+				<Option output="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/bin/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server/fast">
+				<Option output="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/bin/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/executor/environment.cpp">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/executor/environment.h">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/executor/executor.cpp">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/executor/executor.h">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/parser/context.cpp">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/parser/context.h">
+			<Option target="server_static"/>
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/server.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/server.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/client/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\client\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,15 +1,20 @@
+#ifndef _ENVIRONMENT_H_
+#define _ENVIRONMENT_H_
 #include <stdio.h>
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+#include <string>
 
 #include "./executor.h"
+
+using namespace std;
 
 class Environment {
 
     private:
-        std::unordered_map<char*,Executor> executor_map;
-        std::unordered_set<char*>   path_map;
+        unordered_map<string,Executor*> executor_map;
+        unordered_set<char*>   path_map;
         bool is_running;
     
     public:
@@ -21,7 +26,7 @@ class Environment {
         void stop();
         void load_from_path(char* path);
         void load_from_paths(std::vector<char*> paths);
-        Executor* fetch_executor(char* cmd_name);
+        Executor* fetch_executor(string cmd_name,int argc,char** args);
         void addExecutor(Executor* executor);
     
     /**
@@ -30,4 +35,6 @@ class Environment {
     public:
         void onPathAdded(char* path);
         void onPathDelete(char* path);
-}
+};
+
+#endif

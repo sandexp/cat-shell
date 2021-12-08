@@ -1,18 +1,15 @@
-/usr/local/src/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.0dXvTRv2td
--- The C compiler identification is GNU 4.8.5
--- The CXX compiler identification is GNU 4.8.5
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
+/usr/local/src/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.yulEUlC8kV
+Start to build project cat-shell
+Start to build project cat-shell
+Config client and server...
+Start to build project server
+Start to build project server
+Binary Output Dir: /tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/bin
+Archive Directory:/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/lib
+Begin to build test
+Binary Dir: /tmp/tmp.yulEUlC8kV/cmake-build-debug/test
+Source Dir: /tmp/tmp.yulEUlC8kV/test
+Build server_test from /tmp/tmp.yulEUlC8kV/test/server_test.cpp
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/tmp.0dXvTRv2td/cmake-build-debug
+-- Build files have been written to: /tmp/tmp.yulEUlC8kV/cmake-build-debug

@@ -30,10 +30,10 @@ void Executor::execute(){
     }
     if(child_pid==0){
         // 子进程
-        char* cmd=context->get_command();
-        char* args[]=context->get_arg0();
-        if(execl(cmd,args)<0){
-            perror("Error executed %d.",child_pid);
+        const char* cmd=context->get_command().c_str();
+        char** args=context->get_args();
+        if(execvp(cmd,args)<0){
+            printf("Errot executed %d.",child_pid);
             exit(0);
         }else{
            // TODO 重定向输出到控制台中
@@ -41,7 +41,7 @@ void Executor::execute(){
         }
     }else{
         // 父进程等待子进程执行完毕
-        wait(&child_pid);
+        wait();
         printf("Successfully execute process %d",child_pid);
     }
 }

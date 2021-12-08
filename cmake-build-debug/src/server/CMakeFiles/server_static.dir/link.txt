@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libserver.a  CMakeFiles/server_static.dir/executor/environment.cpp.o CMakeFiles/server_static.dir/executor/executor.cpp.o CMakeFiles/server_static.dir/parser/context.cpp.o
+/usr/bin/ranlib lib/libserver.a

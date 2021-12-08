@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/server.dir/executor/environment.cpp.o CMakeFiles/server.dir/executor/executor.cpp.o CMakeFiles/server.dir/parser/context.cpp.o CMakeFiles/server.dir/server.cpp.o  -o bin/server 

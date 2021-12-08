@@ -1,26 +1,30 @@
+#ifndef _CONTEXT_H_
+#define _CONTEXT_H_
 #include <vector>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
 
 class Context {
     public:
         ~Context();
-        Context(char* cmd,vector<char*> arg0,vector<char*> arg1, vector<char*> arg2);
-        Context(char* cmd);
-    
+        Context(string cmd,int argc,char* args[]);
+
     private:
-        char *cmd;
-        vector<char*> args0;
-        vector<char*> args1;
-        vector<char*> args2;
-    
+        string cmd;
+        int argc;
+        char* args[];
+
     public:
         bool validate();
 
-        char* get_command();
+        string get_command();
 
-        vector<char*> get_arg0();
+        char* get_arg(int index);
 
-        vector<char*> get_arg1();
+        char** get_args();
 
-        vector<char*> get_arg2();
-
-}
+        string toString();
+};
+#endif

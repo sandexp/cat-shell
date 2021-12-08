@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\server\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/tmp/tmp.yulEUlC8kV/cmake-build-debug/src/server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yulEUlC8kV/src/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\server\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
